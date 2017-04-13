@@ -14,9 +14,9 @@ public class BonusOne {
     private static boolean doAgain = true;
 
     // creating my array objects
-    private static ArrayList<String> letterGrades = new ArrayList<String>();
-    private static ArrayList<Integer> gradeMaximum = new ArrayList<Integer>();
-    private static ArrayList<Integer> gradeMinimum = new ArrayList<Integer>();
+    private static ArrayList<String> letterGrades = new ArrayList<>();
+    private static ArrayList<Integer> gradeMaximum = new ArrayList<>();
+    private static ArrayList<Integer> gradeMinimum = new ArrayList<>();
     /**
      * defines and initializeds the grade tables
      */
@@ -44,7 +44,7 @@ public class BonusOne {
      */
     private static void inputCheck() {
         boolean correctInput; // will check that user has input 'n', 'N', 'y', or 'Y'
-        char userContinueCheck = '0'; // will check that user wants to repeat the program
+        char userContinueCheck = 'z'; // will check that user wants to repeat the program
 
         /* asks user if they want to continue and then checks their input
         for yes, no, a test result, or an incorrect input */
@@ -63,7 +63,7 @@ public class BonusOne {
                     correctInput = true; // 'n' and 'N' are correct input
                     doAgain = false; // will exit the main program
                     break;
-                case '0':
+                case 'z':
                     correctInput = true; // can repeat test if tester wants
                     System.out.println("Your userContinueCheck has failed.");
                     break;
